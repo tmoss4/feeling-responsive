@@ -8,7 +8,7 @@
 #                                                 /____/
 #
 # Title of your website
-title: 'Feeling Responsive2'
+title: 'Feeling Responsive'
 
 # The slogan describes your website and is used on homepage in <title> and other important places
 slogan: 'A Flexible Theme for Jekyll'
@@ -38,7 +38,7 @@ improve_content: https://github.com/tmoss4/feeling-responsive/edit/gh-pages
 # Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
-urlimg: 'https://tmoss4.github.io/images/'
+urlimg: 'https://tmoss4.github.io/feeling-responsive/images/'
 
 
 # Logo size is 600x80 pixels
