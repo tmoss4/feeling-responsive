@@ -45,9 +45,9 @@
 
             <ul class="no-bullet shadow-black">
             {% for network_item in site.data.network %}
-              {% if network_item.url contains 'http' %}{% assign domain = '' %}{% else %}{% assign domain = site.url + site.baseurl %}{% endif %}
+              {% if network_item.url contains 'http' %}{% assign domain = '' %}{% else %}{% assign domain = '/feeling-responsive' %}{% endif %}
                 <li {% if network_item.class %}class="{{ network_item.class }}" {% endif %}>
-                  <a href="{{ network_item.url }}" title="{{ network_item.title }}">{{ network_item.name }}</a>
+                  <a href="{{ domain }}{{ network_item.url }}" title="{{ network_item.title }}">{{ network_item.name }}</a>
                 </li>
             {% endfor %}
             </ul>
