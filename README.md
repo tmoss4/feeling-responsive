@@ -1,6 +1,9 @@
-This will be the BKR template
+This will be the BKR template...
+My edits include changing all http to https that I could find and using baseurl consistently by changing the config.yml and adding {{ site.baseurl }} snippets (or similar) in a variety of files to ensure functionality. 
+Phlow prefers to use absolute direct links: https://github.com/Phlow/feeling-responsive/issues/47#issuecomment-133053617 
+And puts the entire URL in the siteurl while leaving the baseurl blank. "But the benefit of splitting them up is that when testing the site with jekyll serve, having a baseurl will create a more realistic testing environment. Otherwise, if you write a link like /whatever.html and it never gets prefixed, it'll work while testing but break in production. With a baseurl, anything that's not found in localhost:4000/baseurl/ will be broken, as it should be."
 
-[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=Phlow&url=https://github.com/Phlow/feeling-responsive&title=Support%20Feeling%20Responsive%20Jekyll%20Theme&language=en_GB&tags=github,jekyll,theme,webdesign&category=software)
+[![Flattr this git repo](https://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=Phlow&url=https://github.com/Phlow/feeling-responsive&title=Support%20Feeling%20Responsive%20Jekyll%20Theme&language=en_GB&tags=github,jekyll,theme,webdesign&category=software)
 
 
 # Newsletter: Stay in Touch for Future Updates
