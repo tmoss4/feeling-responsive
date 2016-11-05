@@ -13,5 +13,5 @@
   title: "Subscribe to Atom Feed"
 
 - name: "sitemap.xml"
-  url: "/sitemap.xml"
+  url: "http://srobbin.com/jquery-plugins/backstretch/"
   title: "Sitemap for Google Webmaster Tools"
