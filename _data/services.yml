@@ -9,7 +9,7 @@
   title: "Subscribe to RSS Feed"
 
 - name: "Atom"
-  url: "/atom.xml"
+  url: "atom.xml"
   title: "Subscribe to Atom Feed"
 
 - name: "sitemap.xml"
