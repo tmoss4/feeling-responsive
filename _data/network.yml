@@ -1,7 +1,7 @@
 - menu_name: "Network.yml"
 
 - name: "Icons by Daniel Bruce"
-  url: "https://entypo.com/"
+  url: "http://entypo.com/"
   class: "network-entypo"
   title: "Icons by Daniel Bruce"
 
@@ -11,11 +11,11 @@
   title: "Built on Foundation"
 
 - name: "Images by Unsplash"
-  url: "https://unsplash.com/"
+  url: "http://unsplash.com/"
   class: "rss-link"
   title: "Images by Unsplash"
 
 - name: "Using Backstretch by Scott Robbin"
-  url: "https://srobbin.com/jquery-plugins/backstretch/"
+  url: "http://srobbin.com/jquery-plugins/backstretch/"
   class: "sitemap-link"
   title: "Using Backstretch by Scott Robbin"
