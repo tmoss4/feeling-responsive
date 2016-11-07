@@ -32,7 +32,7 @@ permalink: "/roadmap/"
 * <s>Add include to loop through collections</s>
 * <s>Now with optional caption for header</s>
 * [<s>Refined humans.txt</s>](http://humanstxt.org/)
-* [<s>Produce an introduction video to showcase *Feeling Responsive*</s>](http://www.youtube.com/embed/3b5zCFSmVvU)
+* [<s>Produce an introduction video to showcase *Feeling Responsive*</s>](https://www.youtube.com/embed/3b5zCFSmVvU)
 * [<s>Additional header with text</s>]({{ site.url }}/headers/)
 * <s>Added Google Analtics support</s>
 * [<s>Add redirection layout by KanishkKanishk</s>](http://codingtips.kanishkkunal.in/redirects-jekyll-github-pages/)
