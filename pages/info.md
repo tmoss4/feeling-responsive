@@ -39,13 +39,13 @@ Please make *Feeling Responsive* yours and if you like it, please link back to m
 Yours sincerelly, [Moritz »mo.« Sauer][7]
 
 
- [1]: https://mademistakes.com/about/
- [2]: https://mademistakes.com/work/jekyll-themes/
- [3]: https://automattic.com/
- [4]: https://alistapart.com/
- [5]: https://www.smashingmagazine.com/
- [6]: https://github.com/
- [7]: #
+ [1]: http://mademistakes.com/about/
+ [2]: http://mademistakes.com/work/jekyll-themes/
+ [3]: http://automattic.com/
+ [4]: http://alistapart.com/
+ [5]: http://www.smashingmagazine.com/
+ [6]: http://github.com/
+ [7]: http://sauer.io
  [8]: {{ site.url }}{{ site.baseurl }}/design/gallery/
  [9]: {{ site.url }}{{ site.baseurl }}/design/video/
  [10]: {{ site.url }}{{ site.baseurl }}/design/grid/
