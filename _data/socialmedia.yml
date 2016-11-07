@@ -19,7 +19,7 @@
   title: "Mixe, was sonst?"
 
 - name: Phlow YouTube Google+
-  url: https://plus.google.com/u/0/+Phlow
+  url: http://plus.google.com/u/0/+Phlow
   class: icon-googleplus
   title: "YouTube Google+"
 
@@ -44,6 +44,6 @@
 #   title: ""
 
 # - name: Xing
-#   url: https://www.xing.com/profile/
+#   url: http://www.xing.com/profile/
 #   class: icon-xing
 #   title: Xing Profil

@@ -21,7 +21,7 @@ image:
     thumb: mediaplayer_js-thumb.jpg
     homepage: mediaplayer_js-home.jpg
     caption: Photo by Corey Blaz
-    caption_url: https://blaz.photography/
+    caption_url: http://blaz.photography/
 mediaplayer: true
 ---
 [mediaelement.js][1] is like magic. It's browser and device support is perfect. To activate the video or audio player just set the following variable in front matter to `true`.
@@ -33,7 +33,7 @@ mediaplayer: true
 To use the player just use some HTML5-magic like...
 
 {% highlight html %}
-<audio src="https://path-to-file.com/music.mp3" type="audio/mp3" controls="controls"></audio>
+<audio src="http://path-to-file.com/music.mp3" type="audio/mp3" controls="controls"></audio>
 {% endhighlight %}
 
 All possible functions and how to use *mediaelement.js* is well-documented on the [players website][1].
@@ -56,7 +56,7 @@ All possible functions and how to use *mediaelement.js* is well-documented on th
 
 <audio src="http://archive.org/download/music_from_all_around_the_world/02._music_from_all_around_the_world_-_the_black_atlantic_-_dandelion.mp3" type="audio/mp3" controls="controls"></audio>
 
-[Download Compilation ›](https://archive.org/details/music_from_all_around_the_world)
+[Download Compilation ›](http://archive.org/details/music_from_all_around_the_world)
 {: .t30 .button .radius}
 
 
@@ -65,7 +65,7 @@ All possible functions and how to use *mediaelement.js* is well-documented on th
  [2]: http://jcorneille.de/
  [3]: www.creativecommons.org/licenses/by-nc-nd/3.0/
  [4]: http://phlow-magazine.com/
- [5]: https://archive.org/details/music_from_all_around_the_world
+ [5]: http://archive.org/details/music_from_all_around_the_world
  [6]: #
  [7]: #
  [8]: #

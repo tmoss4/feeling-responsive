@@ -416,7 +416,7 @@ mejs.MediaFeatures = {
 		t.isiOS = t.isiPhone || t.isiPad;
 		t.isAndroid = (ua.match(/android/i) !== null);
 		t.isBustedAndroid = (ua.match(/android 2\.[12]/) !== null);
-		t.isBustedNativeHTTPS = (location.protocol === 'https:' && (ua.match(/android [12]\./) !== null || ua.match(/macintosh.* version.* safari/) !== null));
+		t.isBustedNativehttp = (location.protocol === 'http:' && (ua.match(/android [12]\./) !== null || ua.match(/macintosh.* version.* safari/) !== null));
 		t.isIE = (nav.appName.toLowerCase().indexOf("microsoft") != -1 || nav.appName.toLowerCase().match(/trident/gi) !== null);
 		t.isChrome = (ua.match(/chrome/gi) !== null);
 		t.isChromium = (ua.match(/chromium/gi) !== null);
@@ -961,8 +961,8 @@ mejs.MediaElementDefaults = {
 	plugins: ['flash','silverlight','youtube','vimeo'],
 	// shows debug errors on screen
 	enablePluginDebug: false,
-	// use plugin for browsers that have trouble with Basic Authentication on HTTPS sites
-	httpsBasicAuthSite: false,
+	// use plugin for browsers that have trouble with Basic Authentication on http sites
+	httpBasicAuthSite: false,
 	// overrides the type specified, useful for dynamic instantiation
 	type: '',
 	// path to Flash and Silverlight plugins
@@ -1145,7 +1145,7 @@ mejs.HtmlMediaElementShim = {
 		}
 
 		// test for native playback first
-		if (supportsMediaTag && (options.mode === 'auto' || options.mode === 'auto_plugin' || options.mode === 'native')  && !(mejs.MediaFeatures.isBustedNativeHTTPS && options.httpsBasicAuthSite === true)) {
+		if (supportsMediaTag && (options.mode === 'auto' || options.mode === 'auto_plugin' || options.mode === 'native')  && !(mejs.MediaFeatures.isBustedNativehttp && options.httpBasicAuthSite === true)) {
 						
 			if (!isMediaTag) {
 
@@ -1884,7 +1884,7 @@ window.MediaElement = mejs.MediaElement;
  *
  * What langcode should i use?
  *   http://en.wikipedia.org/wiki/IETF_language_tag
- *   https://tools.ietf.org/html/rfc5646
+ *   http://tools.ietf.org/html/rfc5646
  *
  *
  * License?
@@ -1895,7 +1895,7 @@ window.MediaElement = mejs.MediaElement;
  *
  *   The Drupal project is (like mediaelementjs) licensed under GPLv2.
  *    - http://drupal.org/licensing/faq/#q1
- *    - https://github.com/johndyer/mediaelement
+ *    - http://github.com/johndyer/mediaelement
  *    - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  *
  *
@@ -1926,7 +1926,7 @@ window.MediaElement = mejs.MediaElement;
     /**
      * Get language, fallback to browser's language if empty
      *
-     * IETF: RFC 5646, https://tools.ietf.org/html/rfc5646
+     * IETF: RFC 5646, http://tools.ietf.org/html/rfc5646
      * Examples: en, zh-CN, cmn-Hans-CN, sr-Latn-RS, es-419, x-private
      */
     i18n.getLanguage = function () {
@@ -2835,7 +2835,7 @@ if (typeof jQuery != 'undefined') {
 				}, false);
 
 				t.container.focusout(function (e) {
-					if( e.relatedTarget ) { //FF is working on supporting focusout https://bugzilla.mozilla.org/show_bug.cgi?id=687787
+					if( e.relatedTarget ) { //FF is working on supporting focusout http://bugzilla.mozilla.org/show_bug.cgi?id=687787
 						var $target = $(e.relatedTarget);
 						if (t.keyboardAction && $target.parents('.mejs-container').length === 0) {
 							t.keyboardAction = false;
@@ -3185,7 +3185,7 @@ if (typeof jQuery != 'undefined') {
 
 				loading.show();
 				controls.find('.mejs-time-buffering').show();
-                // Firing the 'canplay' event after a timeout which isn't getting fired on some Android 4.1 devices (https://github.com/johndyer/mediaelement/issues/1305)
+                // Firing the 'canplay' event after a timeout which isn't getting fired on some Android 4.1 devices (http://github.com/johndyer/mediaelement/issues/1305)
                 if (mejs.MediaFeatures.isAndroid) {
                     media.canplayTimeout = window.setTimeout(
                         function() {
@@ -5410,7 +5410,7 @@ if (typeof jQuery != 'undefined') {
 							text = text + '\n' + lines[i];
 							i++;
 						}
-						text = $.trim(text).replace(/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig, "<a href='$1' target='_blank'>$1</a>");
+						text = $.trim(text).replace(/(\b(http?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig, "<a href='$1' target='_blank'>$1</a>");
 						// Text is in a different array so I can use .join
 						entries.text.push(text);
 						entries.times.push(
@@ -5426,7 +5426,7 @@ if (typeof jQuery != 'undefined') {
 				return entries;
 			}
 		},
-		// Thanks to Justin Capella: https://github.com/johndyer/mediaelement/pull/420
+		// Thanks to Justin Capella: http://github.com/johndyer/mediaelement/pull/420
 		dfxp: {
 			parse: function(trackText) {
 				trackText = $(trackText).filter("tt");
@@ -5470,7 +5470,7 @@ if (typeof jQuery != 'undefined') {
 					if (style) _temp_times.style = style;
 					if (_temp_times.start === 0) _temp_times.start = 0.200;
 					entries.times.push(_temp_times);
-					text = $.trim(lines.eq(i).html()).replace(/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig, "<a href='$1' target='_blank'>$1</a>");
+					text = $.trim(lines.eq(i).html()).replace(/(\b(http?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig, "<a href='$1' target='_blank'>$1</a>");
 					entries.text.push(text);
 					if (entries.times.start === 0) entries.times.start = 2;
 				}

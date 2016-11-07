@@ -191,7 +191,7 @@ function FastClick(a,b){"use strict";function c(a,b){return function(){return a.
   };
 
   /*
-    https://github.com/paulirish/matchMedia.js
+    http://github.com/paulirish/matchMedia.js
   */
 
   window.matchMedia = window.matchMedia || (function( doc ) {
@@ -229,7 +229,7 @@ function FastClick(a,b){"use strict";function c(a,b){return function(){return a.
 
   /*
    * jquery.requestAnimationFrame
-   * https://github.com/gnarf37/jquery-requestAnimationFrame
+   * http://github.com/gnarf37/jquery-requestAnimationFrame
    * Requires jQuery 1.8+
    *
    * Copyright (c) 2012 Corey Frang

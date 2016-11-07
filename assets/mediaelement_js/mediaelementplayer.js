@@ -800,7 +800,7 @@ if (typeof jQuery != 'undefined') {
 				}, false);
 
 				t.container.focusout(function (e) {
-					if( e.relatedTarget ) { //FF is working on supporting focusout https://bugzilla.mozilla.org/show_bug.cgi?id=687787
+					if( e.relatedTarget ) { //FF is working on supporting focusout http://bugzilla.mozilla.org/show_bug.cgi?id=687787
 						var $target = $(e.relatedTarget);
 						if (t.keyboardAction && $target.parents('.mejs-container').length === 0) {
 							t.keyboardAction = false;
@@ -1150,7 +1150,7 @@ if (typeof jQuery != 'undefined') {
 
 				loading.show();
 				controls.find('.mejs-time-buffering').show();
-                // Firing the 'canplay' event after a timeout which isn't getting fired on some Android 4.1 devices (https://github.com/johndyer/mediaelement/issues/1305)
+                // Firing the 'canplay' event after a timeout which isn't getting fired on some Android 4.1 devices (http://github.com/johndyer/mediaelement/issues/1305)
                 if (mejs.MediaFeatures.isAndroid) {
                     media.canplayTimeout = window.setTimeout(
                         function() {
@@ -3375,7 +3375,7 @@ if (typeof jQuery != 'undefined') {
 							text = text + '\n' + lines[i];
 							i++;
 						}
-						text = $.trim(text).replace(/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig, "<a href='$1' target='_blank'>$1</a>");
+						text = $.trim(text).replace(/(\b(http?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig, "<a href='$1' target='_blank'>$1</a>");
 						// Text is in a different array so I can use .join
 						entries.text.push(text);
 						entries.times.push(
@@ -3391,7 +3391,7 @@ if (typeof jQuery != 'undefined') {
 				return entries;
 			}
 		},
-		// Thanks to Justin Capella: https://github.com/johndyer/mediaelement/pull/420
+		// Thanks to Justin Capella: http://github.com/johndyer/mediaelement/pull/420
 		dfxp: {
 			parse: function(trackText) {
 				trackText = $(trackText).filter("tt");
@@ -3435,7 +3435,7 @@ if (typeof jQuery != 'undefined') {
 					if (style) _temp_times.style = style;
 					if (_temp_times.start === 0) _temp_times.start = 0.200;
 					entries.times.push(_temp_times);
-					text = $.trim(lines.eq(i).html()).replace(/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig, "<a href='$1' target='_blank'>$1</a>");
+					text = $.trim(lines.eq(i).html()).replace(/(\b(http?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig, "<a href='$1' target='_blank'>$1</a>");
 					entries.text.push(text);
 					if (entries.times.start === 0) entries.times.start = 2;
 				}
