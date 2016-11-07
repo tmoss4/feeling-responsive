@@ -45,7 +45,7 @@ Yours sincerelly, [Moritz »mo.« Sauer][7]
  [4]: https://alistapart.com/
  [5]: https://www.smashingmagazine.com/
  [6]: https://github.com/
- [7]: https://sauer.io
+ [7]: #
  [8]: {{ site.url }}{{ site.baseurl }}/design/gallery/
  [9]: {{ site.url }}{{ site.baseurl }}/design/video/
  [10]: {{ site.url }}{{ site.baseurl }}/design/grid/
