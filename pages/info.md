@@ -49,7 +49,7 @@ Yours sincerelly, [Moritz »mo.« Sauer][7]
  [8]: {{ site.url }}{{ site.baseurl }}/design/gallery/
  [9]: {{ site.url }}{{ site.baseurl }}/design/video/
  [10]: {{ site.url }}{{ site.baseurl }}/design/grid/
- [11]: {{ site.url }}{{ site.baseurl }}/design/typography/
+ [11]: #
  [12]: {{ site.url }}{{ site.baseurl }}/design/mediaelement_js/
  [13]: #
  [14]: #

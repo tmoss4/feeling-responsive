@@ -128,7 +128,7 @@ permalink: "/changelog/"
  [4]: {{ site.url }}{{ site.baseurl }}/design/gallery/
  [5]: {{ site.url }}{{ site.baseurl }}/design/video/
  [6]: http://www.google.de/maps/place/Strandpaviljoen+Joep+B.V./@51.9960733,5.830135,6z/data=!4m2!3m1!1s0x47cf5918df69093b:0x7c11ab31102c1c8a
- [7]: fontcustom.com
+ [7]: #
  [8]: http://www.tawk.to
  [9]: http://github.com/jjamor
  [10]: #

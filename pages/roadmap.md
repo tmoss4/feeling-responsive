@@ -20,7 +20,7 @@ permalink: "/roadmap/"
 * Even better responsive typography
 * Google AdSense ads
 * More post-formats for blogging like special post formats for links, audio, tweets,...
-* Make a [video-sitemap.xml](http://support.google.com/webmasters/answer/80472?hl=en)
+* Make a [video-sitemap.xml](#)
 
 
 
@@ -41,7 +41,7 @@ permalink: "/roadmap/"
 * <s>Disqus comments</s>
 * <s>Rework `list-entries.html` › now language ready</s>
 * [<s>Create custom 404.html-webpage</s>](http://help.github.com/articles/custom-404-pages/)
-* [<s>Add simple search box with Google</s>](http://truongtx.me/2012/12/28/jekyll-create-simple-search-box/)
+* [<s>Add simple search box with Google</s>](#)
 * <s>Alternative non-landscape header</s>
 * <s>Patterns for header</s>
 * <s>Clean up color scheme and highlighting colors</s>
