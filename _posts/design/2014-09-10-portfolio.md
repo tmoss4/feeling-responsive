@@ -29,7 +29,7 @@ categories:
 
     <div class="medium-4 columns">
         <img src="{{ site.urlimg }}webdesign_screenshot_tarnkappe.jpg" alt="">
-        <p>Website: <a href="http://tarnkarppe.info">Tarnkappe.info</a></p>
+        <p>Website: <a href="#">Tarnkappe.info</a></p>
     </div><!-- /.medium-4.columns -->
 
     <div class="medium-4 columns">
